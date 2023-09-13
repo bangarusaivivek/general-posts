@@ -55,12 +55,12 @@ const Posts = () => {
         <Backdrop>
           {showModal === "signup" ? (
             <Signup
-              onClickContinue={() => setShowModal("login")}
+              onClickContinue={setShowModal}
               onClose={() => setShowModal("")}
             />
           ) : (
             <Login
-              onClickContinue={() => setShowModal("")}
+              onClickContinue={setShowModal}
               onClose={() => setShowModal("")}
             />
           )}

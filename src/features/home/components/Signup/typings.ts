@@ -1,4 +1,4 @@
 export interface SignupProps {
     onClose: () => void;
-    onClickContinue: () => void;
+    onClickContinue: (value: string) => void;
 }

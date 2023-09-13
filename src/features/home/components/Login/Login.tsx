@@ -42,10 +42,10 @@ const Login = (props: LoginProps) => {
         />
       </div>
       <div className={styles.btnContainer}>
-        <Button title="Login now" onClick={onClickContinue} />
+        <Button title="Login now" onClick={() => onClickContinue("")} />
       </div>
       <div className={styles.registerTextContainer}>
-        <span style={{ cursor: "pointer" }} onClick={onClickContinue}>
+        <span style={{ cursor: "pointer" }} onClick={() => onClickContinue("signup")}>
           Not registered yet?
           <span className={styles.registerText}> Register →</span>
         </span>
